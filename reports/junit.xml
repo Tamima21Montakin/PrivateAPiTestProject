@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="1" errors="0" time="2.493">
-  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-05-29T11:14:32" time="1.665" tests="1">
-    <testcase classname="testing gets data" name="testing gets data" time="0.04">
+<testsuites name="jest tests" tests="6" failures="2" errors="0" time="3.293">
+  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-05-31T07:04:24" time="0.813" tests="1">
+    <testcase classname="testing gets data" name="testing gets data" time="0.056">
       <failure>SyntaxError: Unexpected end of JSON input
     at JSON.parse (&lt;anonymous&gt;)
     at parseJSONFromBytes (node:internal/deps/undici/undici:4292:19)
@@ -12,8 +12,30 @@
     at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\genericApi.test.ts:14:21)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="0" skipped="0" timestamp="2024-05-29T11:14:32" time="1.673" tests="1">
-    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.04">
+  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-05-31T07:04:24" time="2.362" tests="1">
+    <testcase classname="testing gets data" name="testing gets data" time="0.055">
+      <failure>SyntaxError: Unexpected end of JSON input
+    at JSON.parse (&lt;anonymous&gt;)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:4292:19)
+    at successSteps (node:internal/deps/undici/undici:4274:27)
+    at fullyReadBody (node:internal/deps/undici/undici:2695:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at consumeBody (node:internal/deps/undici/undici:4283:7)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\genericApi.test.ts:14:21)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="JSON validation" errors="0" failures="0" skipped="0" timestamp="2024-05-31T07:04:24" time="2.378" tests="2">
+    <testcase classname="JSON validation should validate correct JSON data" name="JSON validation should validate correct JSON data" time="0.003">
+    </testcase>
+    <testcase classname="JSON validation should invalidate incorrect JSON data" name="JSON validation should invalidate incorrect JSON data" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="0" skipped="0" timestamp="2024-05-31T07:04:24" time="2.377" tests="1">
+    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.054">
+    </testcase>
+  </testsuite>
+  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="0" skipped="0" timestamp="2024-05-31T07:04:24" time="2.391" tests="1">
+    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.042">
     </testcase>
   </testsuite>
 </testsuites>

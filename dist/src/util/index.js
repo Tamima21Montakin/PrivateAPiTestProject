@@ -1,4 +1,4 @@
-export { readRequest,items,versions } from './request';
+export { readRequest, items, versions } from './request';
 /* export { XMLParsers, XMLParser } from './xml';
 export { PortersResources } from './resource-pattern';
 export { RecordSpecificTestPattern, TestPattern } from './pattern.interface';
@@ -17,4 +17,5 @@ export {
     isTelephone,
     isFax,
     isZipcode
-} from './input-format'; */
+} from './input-format'; */ 
+//# sourceMappingURL=index.js.map
