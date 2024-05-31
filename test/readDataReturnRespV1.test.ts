@@ -81,7 +81,6 @@ function processCsvFileForMultipleFields(rows: CsvData[]): jsonData[] {
   }
 // D:/tasks/Generate CSV files for generic resource
 const csvFilePath = path.join(__dirname, '..', 'scripts/files','job_res.csv');
-//path.join('.', 'job_res.csv'); 
 const getCsvdata = readCsvFile(csvFilePath);
 //single fields
 //const jsonResult = processCsvFileForSingleField(getCsvdata);

@@ -1,0 +1,71 @@
+{
+    "$id": "personSchema.json",
+    "title": "Person",
+    "description": "Candidate/Person type resource schema",
+    "type": "object",
+    "properties": {
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^!?[a-zA-Z]+[.][a-zA-Z0-9_]+$"
+          },
+          "properties": {
+            "Person.P_PhaseDate": {
+              "type": "string",
+              "pattern": "^[0-9]{4}[/][0-9]{2}[/][0-9]{2}([ ][0-9]{2}[:][0-9]{2}[:][0-9]{2}([.][0-9]{3})?)?$"
+            },
+            "Person.P_Id": {
+              "type": "string"
+            },
+            "Person.P_Owner": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "Person.P_Phase": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "Person.P_RegisteredBy": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "Person.P_Fax": {
+              "type": "string"
+            },
+            "Person.P_Country": {
+              "type": "string"
+            },
+            "Person.P_PhaseMemo": {
+              "type": "string"
+            },
+            "Person.P_Memo": {
+              "type": "string"
+            },
+            "Person.P_UpdateDate": {
+              "type": "string",
+              "pattern": "^[0-9]{4}[/][0-9]{2}[/][0-9]{2}([ ][0-9]{2}[:][0-9]{2}[:][0-9]{2}([.][0-9]{3})?)?$"
+            }
+          }
+        },
+        "version": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "type": "integer"
+            }
+          }
+        },
+        "total": {
+          "type": "integer"
+        }
+      }
+    }
+  }
