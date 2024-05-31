@@ -82,20 +82,22 @@ function processCsvFileForMultipleFields(rows: CsvData[]): jsonData[] {
 // D:/tasks/Generate CSV files for generic resource
 const csvFilePath = path.join(__dirname, '..', 'scripts/files','job_res.csv');
 const getCsvdata = readCsvFile(csvFilePath);
+
 //single fields
 //const jsonResult = processCsvFileForSingleField(getCsvdata);
+
+
 //multiple fields
 const jsonResult = processCsvFileForMultipleFields(getCsvdata);
 
 for(let i = 0; i <jsonResult.length; i++ )
       {
-describe('PrivateAPI Generic resource record test case - '+(i+1), () => {
+describe('PrivateAPI_Generic_resource_test_case - '+(i+1), () => {
     it('Confirm that a normal result is returned in case of '+'Generic Resource id : '+jsonResult[i].resource +' Field id : '+jsonResult[i].fields+' ID List : '+jsonResult[i].idList, async () => {
        
-      
-        const res = await readRequest(jsonResult[i]);   
-        console.log('The request body in JSON: \n',jsonResult[i]);     
-        console.log('The response body in JSON: \n',await res.json());
+      const res = await readRequest(jsonResult[i]);   
+      console.log('The request body in JSON: \n',jsonResult[i]);     
+      console.log('The response body in JSON: \n',await res.json());
 
           
         
