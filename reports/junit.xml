@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="2" errors="0" time="3.643">
-  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-05-31T12:01:05" time="0.9" tests="1">
-    <testcase classname="testing gets data" name="testing gets data" time="0.057">
+<testsuites name="jest tests" tests="7" failures="5" errors="0" time="9.174">
+  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-06-03T03:31:05" time="3.751" tests="1">
+    <testcase classname="testing gets data" name="testing gets data" time="0.56">
       <failure>SyntaxError: Unexpected end of JSON input
     at JSON.parse (&lt;anonymous&gt;)
     at parseJSONFromBytes (node:internal/deps/undici/undici:4292:19)
@@ -12,8 +12,30 @@
     at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\genericApi.test.ts:14:21)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-05-31T12:01:05" time="2.483" tests="1">
-    <testcase classname="testing gets data" name="testing gets data" time="0.063">
+  <testsuite name="PrivateAPI_Generic_resource_test_case - 1" errors="0" failures="1" skipped="0" timestamp="2024-06-03T03:31:05" time="6.982" tests="1">
+    <testcase classname="PrivateAPI_Generic_resource_test_case - 1 Confirm that a normal result is returned in case of Generic Resource id : 3 Field id : Job.P_Id,Job.P_Position ID List : 10001" name="PrivateAPI_Generic_resource_test_case - 1 Confirm that a normal result is returned in case of Generic Resource id : 3 Field id : Job.P_Id,Job.P_Position ID List : 10001" time="0.196">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:98:19)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="JSON validation" errors="0" failures="0" skipped="0" timestamp="2024-06-03T03:31:04" time="7.238" tests="2">
+    <testcase classname="JSON validation should validate correct JSON data" name="JSON validation should validate correct JSON data" time="0.007">
+    </testcase>
+    <testcase classname="JSON validation should invalidate incorrect JSON data" name="JSON validation should invalidate incorrect JSON data" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="1" skipped="0" timestamp="2024-06-03T03:31:04" time="7.261" tests="1">
+    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.158">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\readDataReturnResponse.test.ts:61:19)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-06-03T03:31:05" time="7.11" tests="1">
+    <testcase classname="testing gets data" name="testing gets data" time="0.107">
       <failure>SyntaxError: Unexpected end of JSON input
     at JSON.parse (&lt;anonymous&gt;)
     at parseJSONFromBytes (node:internal/deps/undici/undici:4292:19)
@@ -24,22 +46,12 @@
     at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\genericApi.test.ts:14:21)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="JSON validation" errors="0" failures="0" skipped="0" timestamp="2024-05-31T12:01:05" time="2.532" tests="2">
-    <testcase classname="JSON validation should validate correct JSON data" name="JSON validation should validate correct JSON data" time="0.003">
-    </testcase>
-    <testcase classname="JSON validation should invalidate incorrect JSON data" name="JSON validation should invalidate incorrect JSON data" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="0" skipped="0" timestamp="2024-05-31T12:01:05" time="2.541" tests="1">
-    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.044">
-    </testcase>
-  </testsuite>
-  <testsuite name="PrivateAPI_Generic_resource_test_case - 1" errors="0" failures="0" skipped="0" timestamp="2024-05-31T12:01:05" time="2.557" tests="1">
-    <testcase classname="PrivateAPI_Generic_resource_test_case - 1 Confirm that a normal result is returned in case of Generic Resource id : 3 Field id : Job.P_Id,Job.P_Position ID List : 10001" name="PrivateAPI_Generic_resource_test_case - 1 Confirm that a normal result is returned in case of Generic Resource id : 3 Field id : Job.P_Id,Job.P_Position ID List : 10001" time="0.046">
-    </testcase>
-  </testsuite>
-  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="0" skipped="0" timestamp="2024-05-31T12:01:05" time="2.977" tests="1">
-    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.032">
+  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="1" skipped="0" timestamp="2024-06-03T03:31:05" time="7.481" tests="1">
+    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.051">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\privateApiGenericResourceGet.test.ts:7:21)</failure>
     </testcase>
   </testsuite>
 </testsuites>
