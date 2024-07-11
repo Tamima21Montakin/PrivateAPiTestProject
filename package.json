@@ -35,7 +35,6 @@
       "@util": "<rootDir>/src/util",
       "@dicts": "<rootDir>/src/dicts"
     }
-    
   },
   "jest-junit": {
     "outputDirectory": "reports",
@@ -53,6 +52,7 @@
     "@types/node-fetch": "^2.6.2",
     "@types/papaparse": "^5.3.14",
     "ajv": "^8.15.0",
+    "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.4.5",
     "eslint": "^7.32.0",
     "jest": "^28.1.3",

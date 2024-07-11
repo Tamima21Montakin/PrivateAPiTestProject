@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="138" failures="57" errors="0" time="5.035">
-  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-06-04T10:49:56" time="0.931" tests="1">
-    <testcase classname="testing gets data" name="testing gets data" time="0.075">
+<testsuites name="jest tests" tests="138" failures="135" errors="0" time="4.199">
+  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-07-11T10:28:32" time="1.044" tests="1">
+    <testcase classname="testing gets data" name="testing gets data" time="0.067">
       <failure>SyntaxError: Unexpected end of JSON input
     at JSON.parse (&lt;anonymous&gt;)
     at parseJSONFromBytes (node:internal/deps/undici/undici:4292:19)
@@ -12,8 +12,8 @@
     at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\genericApi.test.ts:14:21)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-06-04T10:49:56" time="2.583" tests="1">
-    <testcase classname="testing gets data" name="testing gets data" time="0.06">
+  <testsuite name="testing" errors="0" failures="1" skipped="0" timestamp="2024-07-11T10:28:32" time="2.932" tests="1">
+    <testcase classname="testing gets data" name="testing gets data" time="0.067">
       <failure>SyntaxError: Unexpected end of JSON input
     at JSON.parse (&lt;anonymous&gt;)
     at parseJSONFromBytes (node:internal/deps/undici/undici:4292:19)
@@ -24,565 +24,876 @@
     at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\genericApi.test.ts:14:21)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="JSON validation" errors="0" failures="0" skipped="0" timestamp="2024-06-04T10:49:56" time="2.641" tests="2">
-    <testcase classname="JSON validation should validate correct JSON data" name="JSON validation should validate correct JSON data" time="0.007">
-    </testcase>
-    <testcase classname="JSON validation should invalidate incorrect JSON data" name="JSON validation should invalidate incorrect JSON data" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="0" skipped="0" timestamp="2024-06-04T10:49:56" time="2.709" tests="1">
-    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.242">
+  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="1" skipped="0" timestamp="2024-07-11T10:28:32" time="2.966" tests="1">
+    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.049">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\readDataReturnResponse.test.ts:61:19)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="0" skipped="0" timestamp="2024-06-04T10:49:56" time="2.71" tests="1">
-    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.133">
+  <testsuite name="Confirm that normal results are returned when a fixed Field is specified." errors="0" failures="1" skipped="0" timestamp="2024-07-11T10:28:32" time="2.98" tests="1">
+    <testcase classname="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" name="Confirm that normal results are returned when a fixed Field is specified. Confirm that a normal result is returned in case of P_Id" time="0.044">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\privateApiGenericResourceGet.test.ts:7:21)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="[EP0001]getGenericResource " errors="0" failures="4" skipped="0" timestamp="2024-06-04T10:49:56" time="3.567" tests="30">
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field - Person.P_City " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field - Person.P_City " time="0.085">
+  <testsuite name="JSON validation" errors="0" failures="0" skipped="0" timestamp="2024-07-11T10:28:32" time="3.003" tests="2">
+    <testcase classname="JSON validation should validate correct JSON data" name="JSON validation should validate correct JSON data" time="0.002">
     </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Clip " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Clip " time="0.016">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Country " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Country " time="0.014">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Deleted " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Deleted " time="0.012">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Fax " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Fax " time="0.013">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Id " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Id " time="0.014">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: true
-Received: false
-    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:51:31
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Mail " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Mail " time="0.012">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Memo " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Memo " time="0.011">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Mobile " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Mobile " time="0.013">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_MobileMail " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_MobileMail " time="0.012">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Name " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Name " time="0.012">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Owner " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Owner " time="0.011">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Phase " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Phase " time="0.018">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: true
-Received: false
-    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:51:31
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PhaseDate " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PhaseDate " time="0.011">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: true
-Received: false
-    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:51:31
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PhaseMemo " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PhaseMemo " time="0.01">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmAddress " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmAddress " time="0.011">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmGeoLat " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmGeoLat " time="0.012">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmGeoLon " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmGeoLon " time="0.01">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmNearestStation " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmNearestStation " time="0.011">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Prefecture " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Prefecture " time="0.011">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Reading " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Reading " time="0.01">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_RegisteredBy " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_RegisteredBy " time="0.011">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_RegistrationDate " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_RegistrationDate " time="0.01">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Street " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Street " time="0.011">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Telephone " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Telephone " time="0.01">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_UpdateDate " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_UpdateDate " time="0.009">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: true
-Received: false
-    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:51:31
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_UpdatedBy " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_UpdatedBy " time="0.009">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Zipcode " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Zipcode " time="0.012">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Negative Scenarios -  [NT0002] Unauthorized access fails - " name="[EP0001]getGenericResource  Negative Scenarios -  [NT0002] Unauthorized access fails - " time="0.004">
-    </testcase>
-    <testcase classname="[EP0001]getGenericResource  Negative Scenarios -  [NT0003] Malformed requests area not accepted - " name="[EP0001]getGenericResource  Negative Scenarios -  [NT0003] Malformed requests area not accepted - " time="0.008">
+    <testcase classname="JSON validation should invalidate incorrect JSON data" name="JSON validation should invalidate incorrect JSON data" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="[E1]generic/resource-record READ_test_case - " errors="0" failures="51" skipped="0" timestamp="2024-06-04T10:49:56" time="4.314" tests="102">
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.037">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.044">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+  <testsuite name="[EP0001]getGenericResource " errors="0" failures="29" skipped="0" timestamp="2024-07-11T10:28:32" time="3.126" tests="30">
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field - Person.P_City " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field - Person.P_City " time="0.055">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.012">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Clip " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Clip " time="0.01">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.012">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Country " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Country " time="0.006">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.012">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.011">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Deleted " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Deleted " time="0.006">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.019">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.011">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Fax " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Fax " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.011">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Id " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Id " time="0.006">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.012">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Mail " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Mail " time="0.005">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Memo " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Memo " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.011">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Mobile " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Mobile " time="0.007">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_MobileMail " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_MobileMail " time="0.006">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Name " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Name " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Owner " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Owner " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.012">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Phase " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Phase " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.012">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.011">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PhaseDate " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PhaseDate " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.011">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PhaseMemo " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PhaseMemo " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.011">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmAddress " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmAddress " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmGeoLat " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmGeoLat " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmGeoLon " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmGeoLon " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmNearestStation " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_PkmNearestStation " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Prefecture " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Prefecture " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Reading " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Reading " time="0.002">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_RegisteredBy " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_RegisteredBy " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_RegistrationDate " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_RegistrationDate " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.011">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Street " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Street " time="0.002">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.011">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Telephone " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Telephone " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.011">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_UpdateDate " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_UpdateDate " time="0.004">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_UpdatedBy " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_UpdatedBy " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
-    </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Zipcode " name="[EP0001]getGenericResource  Positive Scenarios -  For resource [R1]Candidate/Person [PT0001]returns expected response for field -  Person.P_Zipcode " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+    at D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:42:36
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[EP0001]getGenericResource  Negative Scenarios -  [NT0002] Unauthorized access fails - " name="[EP0001]getGenericResource  Negative Scenarios -  [NT0002] Unauthorized access fails - " time="0.002">
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.008">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
+    <testcase classname="[EP0001]getGenericResource  Negative Scenarios -  [NT0003] Malformed requests area not accepted - " name="[EP0001]getGenericResource  Negative Scenarios -  [NT0003] Malformed requests area not accepted - " time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 401
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\suppliments\person.test.ts:81:32)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+  </testsuite>
+  <testsuite name="[E1]generic/resource-record READ_test_case -  " errors="0" failures="102" skipped="0" timestamp="2024-07-11T10:28:32" time="3.38" tests="102">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Area-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Area-10001 Confirm that a normal result is returned for the generic resource" time="0.03">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.008">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Area-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Area-10001 Return expected response for the generic resource fields" time="0.006">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_AreaSummary-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_AreaSummary-10001 Confirm that a normal result is returned for the generic resource" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_AreaSummary-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_AreaSummary-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Benefits-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Benefits-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Benefits-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Benefits-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_CapitalText-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_CapitalText-10001 Confirm that a normal result is returned for the generic resource" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_CapitalText-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_CapitalText-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_CityReference-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_CityReference-10001 Confirm that a normal result is returned for the generic resource" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_CityReference-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_CityReference-10001 Return expected response for the generic resource fields" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Client-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Client-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Client-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Client-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Clip-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Clip-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Clip-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Clip-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.011">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_CountryReference-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_CountryReference-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.011">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_CountryReference-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_CountryReference-10001 Return expected response for the generic resource fields" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Deleted-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Deleted-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Deleted-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Deleted-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_EmploymentPeriod-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_EmploymentPeriod-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_EmploymentPeriod-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_EmploymentPeriod-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_EmploymentType-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_EmploymentType-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.008">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_EmploymentType-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_EmploymentType-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_EstablishmentDateText-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_EstablishmentDateText-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_EstablishmentDateText-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_EstablishmentDateText-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_ExpectedAgeReason-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_ExpectedAgeReason-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_ExpectedAgeReason-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_ExpectedAgeReason-10001 Return expected response for the generic resource fields" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_FaxReference-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_FaxReference-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.008">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_FaxReference-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_FaxReference-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Holidays-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Holidays-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Holidays-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Holidays-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Id-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Id-10001 Confirm that a normal result is returned for the generic resource" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.011">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Id-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Id-10001 Return expected response for the generic resource fields" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Industry-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Industry-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.01">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Industry-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Industry-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.011">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_IndustrySummary-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_IndustrySummary-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_IndustrySummary-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_IndustrySummary-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_JobCategory-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_JobCategory-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_JobCategory-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_JobCategory-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_JobCategorySummary-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_JobCategorySummary-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.008">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_JobCategorySummary-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_JobCategorySummary-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.009">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Mail-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Mail-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Mail-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Mail-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -  [T1]HTTP POST TEST Confirm that a normal result is returned for the generic resource" time="0.01">
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_MaxSalary-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_MaxSalary-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
     </testcase>
-    <testcase classname="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -  [T2] RESPONSE DATA VALIDATION TEST Return expected response for the generic resource fields" time="0.009">
-      <failure>TypeError: body used already for: http://127.0.10.10/privateapi/generic/resource-record/method/get
-    at Response.consumeBody (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:344:30)
-    at Response.json (D:\VsCodeProjects\PrivateAPiTestProject\node_modules\node-fetch\lib\index.js:269:22)
-    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:129:32)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_MaxSalary-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_MaxSalary-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Memo-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Memo-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Memo-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Memo-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_MinSalary-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_MinSalary-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_MinSalary-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_MinSalary-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_MobileMail-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_MobileMail-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_MobileMail-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_MobileMail-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_MobileReference-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_MobileReference-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_MobileReference-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_MobileReference-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Owner-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Owner-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Owner-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Owner-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PayrollsText-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PayrollsText-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PayrollsText-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PayrollsText-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Phase-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Phase-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Phase-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Phase-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PhaseDate-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PhaseDate-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PhaseDate-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PhaseDate-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PhaseMemo-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PhaseMemo-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PhaseMemo-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PhaseMemo-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PkmAddress-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PkmAddress-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PkmAddress-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PkmAddress-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PkmGeoLat-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PkmGeoLat-10001 Confirm that a normal result is returned for the generic resource" time="0.001">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PkmGeoLat-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PkmGeoLat-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PkmGeoLon-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PkmGeoLon-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PkmGeoLon-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PkmGeoLon-10001 Return expected response for the generic resource fields" time="0.001">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PkmNearestStation-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PkmNearestStation-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PkmNearestStation-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PkmNearestStation-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Position-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Position-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Position-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Position-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PrefectureReference-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PrefectureReference-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PrefectureReference-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PrefectureReference-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PubliclyTraded-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_PubliclyTraded-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PubliclyTraded-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_PubliclyTraded-10001 Return expected response for the generic resource fields" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Publish-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Publish-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Publish-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Publish-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Recruiter-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_Recruiter-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Recruiter-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_Recruiter-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_RegisteredBy-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_RegisteredBy-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_RegisteredBy-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_RegisteredBy-10001 Return expected response for the generic resource fields" time="0.001">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_RegistrationDate-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_RegistrationDate-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_RegistrationDate-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_RegistrationDate-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_ReverseProcessLink-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_ReverseProcessLink-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_ReverseProcessLink-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_ReverseProcessLink-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_SalarySummary-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_SalarySummary-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_SalarySummary-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_SalarySummary-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_SalesAmountText-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_SalesAmountText-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_SalesAmountText-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_SalesAmountText-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_StreetReference-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_StreetReference-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_StreetReference-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_StreetReference-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_TelephoneReference-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_TelephoneReference-10001 Confirm that a normal result is returned for the generic resource" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_TelephoneReference-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_TelephoneReference-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_UpdateDate-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_UpdateDate-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_UpdateDate-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_UpdateDate-10001 Return expected response for the generic resource fields" time="0.003">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_UpdatedBy-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_UpdatedBy-10001 Confirm that a normal result is returned for the generic resource" time="0.004">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_UpdatedBy-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_UpdatedBy-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_WokingHours-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_WokingHours-10001 Confirm that a normal result is returned for the generic resource" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_WokingHours-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_WokingHours-10001 Return expected response for the generic resource fields" time="0.002">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_ZipcodeReference-10001 Confirm that a normal result is returned for the generic resource" name="[E1]generic/resource-record READ_test_case -   [T1]HTTP POST TEST-&gt; 3-Job.P_ZipcodeReference-10001 Confirm that a normal result is returned for the generic resource" time="0.001">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:118:13)</failure>
+    </testcase>
+    <testcase classname="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_ZipcodeReference-10001 Return expected response for the generic resource fields" name="[E1]generic/resource-record READ_test_case -   [T2] RESPONSE DATA VALIDATION TEST FOR -&gt; 3-Job.P_ZipcodeReference-10001 Return expected response for the generic resource fields" time="0.001">
+      <failure>Error: HTTP error! status: 401
+    at readRequest (D:\VsCodeProjects\PrivateAPiTestProject\src\util\request.ts:37:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.&lt;anonymous&gt; (D:\VsCodeProjects\PrivateAPiTestProject\test\readDataReturnRespV1.test.ts:127:13)</failure>
     </testcase>
   </testsuite>
 </testsuites>
